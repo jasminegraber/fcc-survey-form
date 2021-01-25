@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Private Yoga Session</title>
+</head>
+<body>
+    <header>
+        <div class="img-header">
+            <img src="images/yoga.jpeg" alt="Girl next to plants with prayer hands behind back">
+        </div>
+        <div class="text-header">
+            <h1 id="title">Private Yoga Session</h1>
+            <p id="description">Please fill out the form below, and I will reach out to schedule our first session together.</p>
+        </div>
+    </header>
+    <form id="survey-form">
+
+        <div class="input-container">
+            <label for="name" id="name-label" class="label-text">Name</label>
+            <input type="text" name="name" id="name" placeholder="Full Name" required>
+        </div>
+
+        <div class="input-container">
+            <label for="email" id="email-label" class="label-text">Email</label>
+            <input type="email" name="email" id="email" placeholder="Email Address" required>
+        </div>
+
+        <div class="input-container">
+            <label for="age" id="number-label" class="label-text">Age</label>
+            <input type="number" name="age" id="number" min="18" max="85" placeholder="Must be at least 18 years old" required>
+        </div>
+
+        <div class="input-container">
+            <p class="label-text">Have you ever practiced yoga?</p>
+            <div class="checkbox-radio-container">
+                <input type="radio" name="yoga-practice" id="yes">
+                <label for="yes">Yes</label>
+            </div>
+            
+            <div class="checkbox-radio-container">
+                <input type="radio" name="yoga-practice" id="no">
+                <label for="no">No</label>
+            </div>
+        </div>
+            
+        <div class="input-container">
+            <p class="label-text">What do you hope to improve? Select all that apply.</p>
+            <div class="checkbox-radio-container">
+                <input type="checkbox" name="strength" id="strength" value="strength"/>
+                <label for="strength">Strength</label>
+            </div>
+            <div class="checkbox-radio-container">
+                <input type="checkbox" name="mobility" id="mobility" value="mobility"/>
+                <label for="mobility">Mobility</label>
+            </div>
+            <div class="checkbox-radio-container">
+                <input type="checkbox" name="relaxation" id="relaxation" value="relaxation"/>
+                <label for="relaxation">Relaxation</label>
+            </div>
+            <div class="checkbox-radio-container">
+                <input type="checkbox" name="stability" id="stability" value="stability"/>
+                <label for="stability">Stability</label>
+            </div>
+            <div class="checkbox-radio-container">
+                <input type="checkbox" name="focus" id="focus" value="focus"/>
+                <label for="focus">Focus</label>
+            </div>
+        </div>
+
+        <div class="input-container">
+            <label class="label-text">Please share additional info about your body (occupation, hobbies, limitations etc)</label>
+            <textarea name="topics" id="topics" cols="30" rows="10"></textarea>
+        </div>
+        
+        <div class="input-container">
+            <label for="referral" class="label-text">Referred by</label>
+            <select name="referrals" id="dropdown">
+                <option value="friend">Friend</option>
+                <option value="family">Family</option>
+                <option value="doctor">Doctor</option>
+                <option value="social-media">Social Media</option>
+                <option value="podcast">Podcast</option>
+            </select>
+        </div>
+        
+        <button id="submit">Submit</button>
+    </form>
+    
+
+   
+</body>
+</html>
